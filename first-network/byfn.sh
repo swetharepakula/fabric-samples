@@ -375,6 +375,7 @@ function generateCerts() {
     exit 1
   fi
   echo
+  mv crypto-config/peerOrganizations/org1.example.com/ca/*_sk crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com_sk
 }
 
 # The `configtxgen tool is used to create four artifacts: orderer **bootstrap
